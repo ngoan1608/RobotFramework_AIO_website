@@ -5,3 +5,15 @@
    height: 32px;
    margin-top: -6px;
 }
+.nav-header{
+  background-color: rgb(40 10 100);
+}
+/* .nav-header a {
+  color: white !important;
+} */
+/* .nav-header a:hover, a.active {
+  color: blue !important;
+} */
+#main-content > div {
+  text-align: justify;
+}

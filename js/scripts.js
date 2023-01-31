@@ -1,4 +1,11 @@
 $(document).ready(function() {
+   // Load *.html templates for each section 
+   var HTML_TEMPLATES = ["background", "features", "downloads", "usage", 
+                         "document", "about"];
+   for (section of HTML_TEMPLATES){
+      $(`#${section}-content`).load(`./html/${section}.html`);
+   }
+
    // Highlight the active section in the navigation bar
    $('body').scrollspy({ target: '#navbarNav' });
 });
