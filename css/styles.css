@@ -1,6 +1,8 @@
-#contacts {
-  display: none;
-}
+/* html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+} */
+
 #robotfw-aio-icon{
    height: 32px;
    margin-top: -6px;
@@ -16,4 +18,46 @@
 } */
 #main-content > div {
   text-align: justify;
+}
+
+.navbar-nav li{
+  white-space: nowrap;
+}
+
+input {
+  min-width: 100px;
+}
+/* @media (min-width: 992px){
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+  }
+} */
+
+/* for images */
+.zoom-img {
+  transition: transform .2s;
+}
+.zoom-img:hover {
+  transform: scale(1.5);
+}
+
+
+/* Download section style */
+.download{
+  text-align: center;
+}
+/* OS icons */
+.os-icon{
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  /* margin-left: 25px; */
+}
+/* Download buttons */
+.download-btn{
+  width: 150px;
+  background-color: rgb(40 10 100);
+  border: 0;
+  color: white;
+  padding: 10px;
 }
