@@ -60,4 +60,39 @@ input {
   border: 0;
   color: white;
   padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.download-btn:hover{
+  background-color: rgb(70 25 150);
+  border: 0px;
+}
+
+
+/* Contact page */
+.contact-options {
+  justify-content: space-between;
+  text-align: center;
+}
+
+.contact-options a {
+  color: rgb(40 10 100);
+  background-color: #cecece;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  padding: 7px 20px;
+  border: 1px solid rgb(40 10 100);;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.contact-options a:hover {
+  background-color: rgb(40 10 100);
+  color: #fff;
+  cursor: pointer;
 }

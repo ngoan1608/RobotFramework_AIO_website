@@ -24,7 +24,7 @@ function addListeners(){
    $('body').scrollspy({ target: '#navbarNav' });
 
    // Search button event
-   document.getElementById('search-btn').addEventListener('click', searchHandler);
+   // document.getElementById('search-btn').addEventListener('click', searchHandler);
 
    // Image clicking events
    images = document.getElementsByTagName('img');
