@@ -1,11 +1,12 @@
 $(document).ready(function() {
    // Load navigation and footer
    $("nav").load("./html/navigation.html");
-   $("footer").load("./html/footer.html");
-
+   $("footer").load("./html/footer.html", function() {
+      generateMailtoLink();
+   });
    // Load *.html templates for each section 
    var HTML_CONTENTS = ["background", "features", "downloads", "usage", 
-                         "document", "about"];
+                         "documentation", "about"];
    var i = 0;
    for (section of HTML_CONTENTS){
       $(`#${section}`).load(`./html/contents/${section}.html`, function(){
@@ -69,3 +70,18 @@ function downloadInstaller(os){
    }
    window.open(installerURL, "Download");
 }
+
+function decodeEmail(encoded) {
+   var email = "thomas.pollerspoeck@de.bosch.com";
+   //for (var i = 0; i < encoded.length; i += 2) {
+   //    email += String.fromCharCode(parseInt(encoded.substr(i, 2), 16));
+   //}
+   return email;
+}
+function generateMailtoLink() {
+   var encoded = "696e666f40626569737069656c2e636f6d"; // hex-codierte E-Mail-Adresse
+   var email = decodeEmail(encoded);
+   var mailtoLink = "mailto:" + email;
+   document.getElementById("email-link").setAttribute("href", mailtoLink);
+   document.getElementById("email-link").textContent = "Contact";
+} 
