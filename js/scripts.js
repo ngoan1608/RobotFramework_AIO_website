@@ -1,8 +1,27 @@
 $(document).ready(function() {
    // Load navigation and footer
-   $("nav").load("./html/navigation.html");
+   $("nav").load("./html/navigation.html", function(){
+      // Eventlistener für Klick auf den Link
+  //    document.getElementById("my-link").addEventListener("click", function(event) {
+         // Verhindern, dass der Link standardmäßig geöffnet wird
+         //event.preventDefault();
+      
+         // Aktionen ausführen, wenn der Link geklickt wird
+   //      console.log("Link wurde geklickt!");
+      
+         // Hier kannst du weitere Aktionen ausführen, wie zum Beispiel eine Nachricht anzeigen oder eine Funktion aufrufen
+         // Wenn die Seite geladen wird, kannst du auch die window.onload-Eventlistener verwenden, um darauf zu reagieren
+   //   });
+      
+      // Eventlistener für das Laden der Seite
+    //  window.onload = function() {
+         // Aktionen ausführen, wenn die Seite geladen wird
+    //     console.log("Seite wurde geladen!");
+      //};
+   })
+
    $("footer").load("./html/footer.html", function() {
-      generateMailtoLink();
+      generateMailtoLink("em_footer","Contact");
    });
    // Load *.html templates for each section 
    var HTML_CONTENTS = ["background", "features", "downloads", "usage", 
@@ -19,6 +38,7 @@ $(document).ready(function() {
    }
 
 });
+
 
 function addListeners(){
    // Highlight the active section in the navigation bar
@@ -71,17 +91,46 @@ function downloadInstaller(os){
    window.open(installerURL, "Download");
 }
 
-function decodeEmail(encoded) {
-   var email = "thomas.pollerspoeck@de.bosch.com";
-   //for (var i = 0; i < encoded.length; i += 2) {
-   //    email += String.fromCharCode(parseInt(encoded.substr(i, 2), 16));
-   //}
-   return email;
-}
-function generateMailtoLink() {
-   var encoded = "696e666f40626569737069656c2e636f6d"; // hex-codierte E-Mail-Adresse
-   var email = decodeEmail(encoded);
+function decode(encodedString) {
+      console.log(encodedString)
+      var charArray = encodedString.split('');
+  
+      for (let i = 0; i < charArray.length - 1; i += 2) {
+          let temp = charArray[i];
+          charArray[i] = charArray[i + 1];
+          charArray[i + 1] = temp;
+      }
+  
+      var swappedString = charArray.join('');
+      var decodedString = atob(swappedString);
+  
+      return decodedString;
+  }
+
+function generateMailtoLink(id,newContent) {
+   var encoded = "GdvhWbzFnLvBGblxncwN2bjV0aiB3bjNCaj52b=0"; 
+   var email = decode(encoded);
    var mailtoLink = "mailto:" + email;
-   document.getElementById("email-link").setAttribute("href", mailtoLink);
-   document.getElementById("email-link").textContent = "Contact";
+   if (id === undefined){return}
+
+   document.getElementById(id).setAttribute("href", mailtoLink);
+   console.log(newContent)
+   var content="Contact";
+   if (newContent !== undefined) {
+      content=newContent;
+   }
+   document.getElementById(id).textContent = content;
 } 
+
+function encodeEmailAndSwap(email) {
+   let base64Encoded = btoa(email);
+   let charArray = base64Encoded.split('');
+   for (let i = 0; i < charArray.length - 1; i += 2) {
+       let temp = charArray[i];
+       charArray[i] = charArray[i + 1];
+       charArray[i + 1] = temp;
+   }
+
+   let result = charArray.join('');
+   return result;
+}
