@@ -92,7 +92,6 @@ function downloadInstaller(os){
 }
 
 function decode(encodedString) {
-      console.log(encodedString)
       var charArray = encodedString.split('');
   
       for (let i = 0; i < charArray.length - 1; i += 2) {
@@ -114,7 +113,7 @@ function generateMailtoLink(id,newContent) {
    if (id === undefined){return}
 
    document.getElementById(id).setAttribute("href", mailtoLink);
-   console.log(newContent)
+
    var content="Contact";
    if (newContent !== undefined) {
       content=newContent;
