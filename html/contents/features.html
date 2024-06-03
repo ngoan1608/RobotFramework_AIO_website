@@ -20,18 +20,36 @@
       <p>An All-In-One package which contains all required packages, tools and libraries in one installer file</p>
       <ul>
         <li><a href="https://www.python.org">Python Interpreter</a> - version <strong>3.9</strong></li>
-        <li><a href="https://robotframework.org">Robot Framework</a> - version <strong>4.1.3</strong> <em style="color:red">(will be upgraded to version 6 in next release)</em></li>
+        <li><a href="https://robotframework.org">Robot Framework core</a> - <strong>branch of version 6.02 with extensions (details below)</strong></li>
         <li><a href="https://vscodium.com">VSCodium Editor</a> with pre-installed helpful extensions and pre-configured workspace</li>
         <li>Additional Python and Robot Framework libraries</li>
       </ul>
     </div>
-    <div class="col-lg-5">
-      <img src="./images/AIO_package.png" width="100%"></img>
+    <div class="col-lg-5 d-flex justify-content-center">
+      <img src="./images/AIO_package.png" width="90%"></img>
+    </div>
+  </div>
+
+  <div class="row mb">
+    <div class="col-lg-7">
+      <p><strong>Robot Framework core extensions</strong></p>
+      <p>We extend the Robot Framework core according to our requirements. Goal is to bring this changes into the community version that
+        we can use a standard Robot Framework core.
+      </p>
+      <ul>
+        <li><a href="https://github.com/test-fullautomation/robotframework-documentation/blob/develop/RobotFrameworkAIO/RobotFrameworkAIO_Reference.pdf">Threading (page 13, chapter 7)</a><br>
+        This feature is currently in stabilization</li>
+        <li><a href="https://github.com/test-fullautomation/robotframework-documentation/blob/develop/RobotFrameworkAIO/RobotFrameworkAIO_Reference.pdf">Loglevel "USER" (page 12, chapter 6)</a><br>
+        For this feature we created already a <a href="https://github.com/robotframework/robotframework/pull/5084">pull-request</a> for the Robot Framework core</li>
+      </ul>
+    </div>
+    <div class="col-lg-5 d-flex justify-content-center">
+      <img src="./images/puzzle.png" width="50%"></img>
     </div>
   </div>
 
   <!-- VSCodium features -->
-  <div class="row mt-2">
+  <div class="row mb mt-2 ">
 
     <div class="col-lg-7">
       <p><strong>VSCodium Editor</strong> with pre-installed extensions, pre-configured workspace and the tutorial Robot test folder</p>
@@ -49,7 +67,7 @@
   </div>
 
   <!-- Testsuites Management -->
-  <div class="row mt-2">
+  <div class="row mb mt-2">
     <div class="col-lg-7">
       <p>
         <a href="https://github.com/test-fullautomation/robotframework-testsuitesmanagement" target="_blank">
@@ -63,32 +81,16 @@
         <li><strong>Flexible Configuration:</strong> Adapt and configure your test suites effortlessly.</li>
     </ul>
     </div>
-    <div class="col-lg-5">Image/diagram about this feature</div>
-  </div>
-
-
-
-
-
-
-  <!-- QConnectBase -->
-  <div class="row mt-2">
-    <div class="col-lg-7">Image/diagram about this feature</div>
-    <div class="col-lg-5">
-      <p>
-        <a href="https://github.com/test-fullautomation/robotframework-qconnect-base" target="_blank">
-          QConnectBase
-        </a> library provides a mechanism to handle trace log continously receiving from various connection types</p>
-      <ul>
-        <li>TCP/IP</li>
-        <li>SSH</li>
-        <li>Serial</li>
-      </ul>
+    <div class="col-lg-5 d-flex justify-content-center">
+      <img src="./images/tsm.png" style="width: 50%; height: 80%;"></img>
     </div>
   </div>
 
+
+
+
   <!-- Import Tools -->
-  <div class="row mt-2">
+  <div class="row mb mt-2">
     <div class="col-lg-7">
       <p>
         RobotFramework AIO package provides the solution to import the 

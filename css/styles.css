@@ -22,6 +22,8 @@ input {
 /* for zooming images on larged screen*/
 @media screen and (min-width: 992px) {
   .zoom-img {
+    position: relative;
+    z-index: 1; /* Force top most layer */
     transition: transform .2s;
   }
   .zoom-img:hover {
