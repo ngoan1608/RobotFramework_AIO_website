@@ -17,12 +17,18 @@
   <!-- AIO package -->
   <div class="row mb">
     <div class="col-lg-7">
-      <p>An All-In-One package which contains all required packages, tools and libraries in one installer file</p>
+      <p>An <strong>All-In-One package</strong> which contains all required packages, tools and libraries in one installer file</p>
       <ul>
-        <li><a href="https://www.python.org">Python Interpreter</a> - version <strong>3.9</strong></li>
-        <li><a href="https://robotframework.org">Robot Framework core</a> - <strong>branch of version 6.02 with extensions (details below)</strong></li>
-        <li><a href="https://vscodium.com">VSCodium Editor</a> with pre-installed helpful extensions and pre-configured workspace</li>
-        <li>Additional Python and Robot Framework libraries</li>
+        <li><a href="https://www.python.org" target="_blank">Python Interpreter</a> - version <strong>3.9</strong></li>
+        <li><a href="https://robotframework.org" target="_blank">Robot Framework core</a> - <strong>branch of version 6.02 with extensions</strong> (<a href="#label_extensions">details below</a>)</li>
+        <li><a href="https://vscodium.com" target="_blank">VSCodium Editor</a> with pre-installed helpful extensions and pre-configured workspace (<a href="#label_vscodium">details below</a>)</li>
+        <li>Additional Python and Robot Framework libraries <br>
+            - <a href="https://html-preview.github.io/?url=https://github.com/test-fullautomation/robotframework-documentation/blob/develop/RobotFrameworkAIO/Components.html" target="_blank">maintained by RobotFramework AIO team</a><br>
+            - <a href="https://github.com/test-fullautomation/robotframework-documentation/blob/develop/RobotFrameworkAIO/RobotFrameworkAIO_Reference.pdf" target="_blank">general testing related OSS libraries (last page)</a> e.g. 
+          <a href="https://pypi.org/project/Appium-Python-Client/" target="_blank">Appium-Python-Client</a> and <a href="https://appium.io/docs/en/latest/" target="_blank">Appium</a>, 
+          <a href="https://pypi.org/project/matplotlib/" target="_blank">matplotlib</a>,  
+          <a href="https://pypi.org/project/scipy/" target="_blank">scipy</a>, ...
+        </li>   
       </ul>
     </div>
     <div class="col-lg-5 d-flex justify-content-center">
@@ -30,16 +36,17 @@
     </div>
   </div>
 
-  <div class="row mb">
+  <div id="label_extensions" class="jump-area"></div>
+  <div class="row mb ">
     <div class="col-lg-7">
       <p><strong>Robot Framework core extensions</strong></p>
-      <p>We extend the Robot Framework core according to our requirements. Goal is to bring this changes into the community version that
-        we can use a standard Robot Framework core.
+      <p>We are enhancing the Robot Framework core to meet our specific requirements, with the ultimate goal of contributing these improvements to the 
+        community version, enabling everyone to benefit from a better Robot Framework core.
       </p>
       <ul>
-        <li><a href="https://github.com/test-fullautomation/robotframework-documentation/blob/develop/RobotFrameworkAIO/RobotFrameworkAIO_Reference.pdf">Threading (page 13, chapter 7)</a><br>
+        <li><a href="https://github.com/test-fullautomation/robotframework-documentation/blob/develop/RobotFrameworkAIO/RobotFrameworkAIO_Reference.pdf" target="_blank">Threading (page 13, chapter 7)</a><br>
         This feature is currently in stabilization</li>
-        <li><a href="https://github.com/test-fullautomation/robotframework-documentation/blob/develop/RobotFrameworkAIO/RobotFrameworkAIO_Reference.pdf">Loglevel "USER" (page 12, chapter 6)</a><br>
+        <li><a href="https://github.com/test-fullautomation/robotframework-documentation/blob/develop/RobotFrameworkAIO/RobotFrameworkAIO_Reference.pdf" target="_blank">Loglevel "USER" (page 12, chapter 6)</a><br>
         For this feature we created already a <a href="https://github.com/robotframework/robotframework/pull/5084">pull-request</a> for the Robot Framework core</li>
       </ul>
     </div>
@@ -48,9 +55,10 @@
     </div>
   </div>
 
+
+  <div id="label_vscodium" class="jump-area"></div> 
   <!-- VSCodium features -->
   <div class="row mb mt-2 ">
-
     <div class="col-lg-7">
       <p><strong>VSCodium Editor</strong> with pre-installed extensions, pre-configured workspace and the tutorial Robot test folder</p>
       <ul>
@@ -58,6 +66,7 @@
           <a href="https://open-vsx.org/extension/robocorp/robotframework-lsp" target="_blank">Robot Framework Language Server</a> 
           and other useful extensions</li>
         <li>Pre-configured workspace and extensions so that you just click <strong>Run/Debug</strong> button to execute Robot testcase(s)</li>
+        <li>Hello World example for immediate execution </li>
         <li>The <strong>tutorial</strong> test folder for you to practice with Robot Framework</li>
       </ul>
     </div>

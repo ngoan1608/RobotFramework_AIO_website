@@ -27,7 +27,7 @@ input {
     transition: transform .2s;
   }
   .zoom-img:hover {
-    transform: scale(2.5);
+    transform: scale(2);
     z-index: 3;
   }
 }
@@ -116,7 +116,15 @@ input {
   cursor: pointer;
 }
 
-
 .mb {
   margin-bottom: 40px;
+}
+
+/* jumps withing a document were too far, so that some 
+   text was hidden. This positions the jump properly -*/
+.jump-area {
+  display: block;
+  height: 70px; /* Anpassen je nach Bedarf */
+  margin-top: -70px; /* Gleiche Höhe wie height */
+  visibility: hidden;
 }
