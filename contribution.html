@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RobotFramework AIO</title><link rel="icon" type="image/x-icon" href="./images/RobotFramework_AIO.ico">
+    <meta charset="UTF-8">
+    <meta name="description" content="RobotFramework AIO website">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Tran Duy Ngoan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top nav-header"></nav>
+    
+    <!-- Main content -->
+    <main class="container my-5" id="main-content">
+      <section id="contacts" class="text-left my-5">
+         <div class="container">
+            <h1 class="text-center"><i class="fas fa-thumbs-up"></i> Join Us in Making RobotFramework AIO Even Better!</h1>
+            <p>Welcome to the RobotFramework AIO project – an open-source initiative dedicated to simplifying and enhancing test automation with Robot Framework. We invite you to be a part of our vibrant community and contribute your skills and expertise to help make RobotFramework AIO the best it can be.</p>
+            <p>Whether you're passionate about writing code, debugging, improving documentation, or simply sharing your insights, there's a place for you in our project. Every contribution, big or small, makes a significant impact on the success and growth of RobotFramework AIO.</p>
+            <p>By contributing to RobotFramework AIO, you'll not only enhance your own skills and knowledge but also play a crucial role in shaping the future of test automation. Join us in our mission to empower testers and developers worldwide with powerful and intuitive tools for building reliable and scalable test suites.</p>
+            <p>Ready to get started? Explore our <a href="https://github.com/test-fullautomation" target="_blank">nearly 30 github repositories</a>, dive into our issue trackers and join the discussions. Your contributions are invaluable, and together, we can take RobotFramework AIO to new heights.</p>
+            <p>Thank you for considering joining us on this exciting journey. Together, let's make RobotFramework AIO the go-to solution for test automation enthusiasts everywhere. We look forward to collaborating with you!</p>
+            
+            <div class="contact-options">
+              <a id="em_bt" href="#">Email to us</a>
+              <a href="https://github.com/test-fullautomation/RobotFramework_AIO/issues/new" target="_blank">New github issue</a>
+              <a href="https://github.com/test-fullautomation/RobotFramework_AIO/discussions/new/choose" target="_blank">New github discussion</a>
+            </div>
+         </div>
+      </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="bg-light py-3"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/scripts.js"></script>
+
+    <script>
+      // Eventlistener für das Laden der Seite
+      window.onload = function() {
+          // Aktionen ausführen, wenn die Seite geladen wird
+          generateMailtoLink("em_bt","Email to us");
+      };
+    </script>
+
+  </body>
+
+
+
+</html>
