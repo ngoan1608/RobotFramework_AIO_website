@@ -1,24 +1,12 @@
 <h2 class="mt-5">Features</h2>
 <hr>
 <div id="features-content">
-  <!-- <p>Lists of RobotFramework AIO's features</p>
-  <ul>
-    <li>All required packages and libraries in one installer file</li>
-    <li>Packaged Python 3.9 with required dependencies and helpful packages</li>
-    <li>Packaged Robotframework with extended libraries</li>
-    <li>VScodium IDE with required extensions</li>
-    <li>Variants and json configuration files with <strong>RobotFramework_TestsuitesManagement</strong></li>
-    <li>Mechanism to handle trace log continously receiving from a connections with <strong>QConnectBase</strong></li>
-    <li>Import tools to process the Robotframework/PyTest results</li>
-    <li>Testresult Webapp infrastructure</li>
-    <li>...</li>
-  </ul> -->
 
   <!-- AIO package -->
   <div class="row mb">
     <div class="col-lg-7">
       <p><strong>All-In-One package</strong></p>
-      <p>An All-In-One package which contains all required packages, tools and libraries in one installer file</p>
+      <p>An All-In-One package which contains all required packages, tools and libraries in one installer file:</p>
       <ul>
         <li><a href="https://www.python.org" target="_blank">Python Interpreter</a> - version <strong>3.9</strong></li>
         <li><a href="https://robotframework.org" target="_blank">Robot Framework core</a> - <strong>branch of version 6.02 with extensions</strong> (<a href="#label_extensions">details below</a>)</li>
@@ -42,13 +30,13 @@
     <div class="col-lg-7">
       <p><strong>Robot Framework core extensions</strong></p>
       <p>We are enhancing the Robot Framework core to meet our specific requirements, with the ultimate goal of contributing these improvements to the 
-        community version, enabling everyone to benefit from a better Robot Framework core.
+        community version, enabling everyone to benefit from a better Robot Framework core:
       </p>
       <ul>
         <li><a href="https://github.com/test-fullautomation/robotframework-documentation/blob/develop/RobotFrameworkAIO/RobotFrameworkAIO_Reference.pdf" target="_blank">Threading (page 13, chapter 7)</a><br>
         This feature is currently in stabilization</li>
         <li><a href="https://github.com/test-fullautomation/robotframework-documentation/blob/develop/RobotFrameworkAIO/RobotFrameworkAIO_Reference.pdf" target="_blank">Loglevel "USER" (page 12, chapter 6)</a><br>
-        For this feature we created already a <a href="https://github.com/robotframework/robotframework/pull/5084">pull-request</a> for the Robot Framework core</li>
+        This feature is stable and we created already a <a href="https://github.com/robotframework/robotframework/pull/5084">pull-request</a> for the Robot Framework core</li>
       </ul>
     </div>
     <div class="col-lg-5 d-flex justify-content-center">
@@ -62,7 +50,7 @@
   <div class="row mb mt-2 ">
     <div class="col-lg-7">
       <p><strong>VSCodium Editor</strong></p>
-      <p>VSCodium Editor with pre-installed extensions, pre-configured workspace and the tutorial Robot test folder</p>
+      <p>VSCodium Editor with pre-installed extensions, pre-configured workspace and the tutorial folder:</p>
       <ul>
         <li>Pre-installed <a href="https://open-vsx.org/extension/ms-python/python" target="_blank">Python</a>, 
           <a href="https://open-vsx.org/extension/robocorp/robotframework-lsp" target="_blank">Robot Framework Language Server</a> 
@@ -81,15 +69,15 @@
   <div class="row mb mt-2">
     <div class="col-lg-7">
       <p>
-        <strong><a href="https://github.com/test-fullautomation/robotframework-testsuitesmanagement" target="_blank">
+        <strong><a href="https://pypi.org/project/robotframework-testsuitesmanagement/" target="_blank">
           RobotFramework_TestsuitesManagement
-        </a></strong> <p>RobotFramework AIO offers scalable management of an unlimited number of projects and variants through JSONP. JSONP is an extended 
-                version of JSON that allows for comments, imports, and variables at the JSON level, making it incredibly flexible and powerful for managing your test suites.</p>
+        </a></strong> <p>RobotFramework AIO offers scalable management of an unlimited number of projects and variants through <a href="https://pypi.org/project/JsonPreprocessor/" target="_blank">JSONP</a>. JSONP is an extended 
+                version of <a href="https://www.json.org/json-en.html" target="_blank">JSON</a> that allows for comments, imports, and variables at the JSON level, making it incredibly flexible and powerful for managing your test suites:</p>
       </p>
       <ul class="feature-list">
-        <li><strong>Scalable Management:</strong> Easily manage numerous projects and variants.</li>
-        <li><strong>Advanced JSONP:</strong> Utilize comments, imports, and variables directly in JSON.</li>
-        <li><strong>Flexible Configuration:</strong> Adapt and configure your test suites effortlessly.</li>
+        <li><strong>Scalable Management:</strong> Easily manage numerous projects and variants</li>
+        <li><strong>Advanced <a href="https://pypi.org/project/JsonPreprocessor/" target="_blank">JSONP</a>:</strong> Utilize comments, (recursive) imports, and variables directly in JSON</li>
+        <li><strong>Flexible Configuration:</strong> Adapt and configure your test suites effortlessly</li>
     </ul>
     </div>
     <div class="col-lg-5 d-flex justify-content-center">
@@ -115,14 +103,14 @@
           <a href="https://www.ibm.com/docs/en/elm/6.0.5?topic=capabilities-rational-quality-manager" target="_blank">Rational Quality Manager - RQM</a>
           (for the older versions).
           <ul>
-            <li><a href="https://github.com/test-fullautomation/robotframework-robotlog2rqm" target="_blank">RobotLog2RQM tool</a></li>
+            <li><a href="https://pypi.org/project/robotframework-robotlog2rqm/" target="_blank">RobotLog2RQM tool</a></li>
           </ul>
         </li>
         <li><a href="https://github.com/test-fullautomation/testresultwebapp" target="_blank">TestResultWebApp</a>:
           A web application for managing test execution results systematically and processing, displaying of test result data in a sophisticated way.
           <ul>
-            <li><a href="https://github.com/test-fullautomation/robotframework-robotlog2db" target="_blank">RobotLog2DB tool</a></li>
-            <li><a href="https://github.com/test-fullautomation/python-pytestlog2db" target="_blank">PyTestLog2DB tool</a></li>
+            <li><a href="https://pypi.org/project/robotframework-robotlog2db/" target="_blank">RobotLog2DB tool</a></li>
+            <li><a href="https://pypi.org/project/PyTestLog2DB/" target="_blank">PyTestLog2DB tool</a></li>
           </ul>
         </li>
       </ol>
