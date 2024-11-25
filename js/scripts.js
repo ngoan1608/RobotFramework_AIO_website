@@ -1,24 +1,6 @@
 $(document).ready(function() {
    // Load navigation and footer
-   $("nav").load("./html/navigation.html", function(){
-      // Eventlistener für Klick auf den Link
-  //    document.getElementById("my-link").addEventListener("click", function(event) {
-         // Verhindern, dass der Link standardmäßig geöffnet wird
-         //event.preventDefault();
-      
-         // Aktionen ausführen, wenn der Link geklickt wird
-   //      console.log("Link wurde geklickt!");
-      
-         // Hier kannst du weitere Aktionen ausführen, wie zum Beispiel eine Nachricht anzeigen oder eine Funktion aufrufen
-         // Wenn die Seite geladen wird, kannst du auch die window.onload-Eventlistener verwenden, um darauf zu reagieren
-   //   });
-      
-      // Eventlistener für das Laden der Seite
-    //  window.onload = function() {
-         // Aktionen ausführen, wenn die Seite geladen wird
-    //     console.log("Seite wurde geladen!");
-      //};
-   })
+   $("nav").load("./html/navigation.html", function(){})
 
    $("footer").load("./html/footer.html", function() {
       generateMailtoLink("em_footer","Contact");
@@ -38,7 +20,6 @@ $(document).ready(function() {
    }
 
 });
-
 
 function addListeners(){
    // Highlight the active section in the navigation bar
@@ -91,6 +72,7 @@ function downloadInstaller(os){
    window.open(installerURL, "Download");
 }
 
+// Hide email-address
 function decode(encodedString) {
       var charArray = encodedString.split('');
   
